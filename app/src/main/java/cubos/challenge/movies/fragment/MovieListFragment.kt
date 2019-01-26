@@ -52,13 +52,13 @@ class MovieListFragment : Fragment(), MainView, RecyclerItemClickListener {
     override fun setDataToRecyclerView(movieList: Array<Movie>) {
         adapter = MovieAdapter(movieList, this)
         movieListRecyclerView.adapter = adapter
-        imageViewEmpty.visibility = View.GONE
-        textViewEmpty.visibility = View.GONE
+        fragmentMovieListImageViewEmpty.visibility = View.GONE
+        fragmentMovieListTextViewEmpty.visibility = View.GONE
     }
 
     override fun onResponseFailure(throwable: Throwable) {
-        imageViewEmpty.visibility = View.VISIBLE
-        textViewEmpty.visibility = View.VISIBLE
+        fragmentMovieListImageViewEmpty.visibility = View.VISIBLE
+        fragmentMovieListTextViewEmpty.visibility = View.VISIBLE
     }
 
     override fun onItemClick(movie: Movie) {

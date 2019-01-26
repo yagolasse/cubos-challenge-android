@@ -3,7 +3,7 @@ package cubos.challenge.movies.adapter
 import android.content.Context
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
-import cubos.challenge.movies.*
+import cubos.challenge.movies.R
 import cubos.challenge.movies.config.*
 import cubos.challenge.movies.factory.MovieListFragment
 

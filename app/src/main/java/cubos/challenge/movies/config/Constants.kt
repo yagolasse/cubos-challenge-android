@@ -18,7 +18,7 @@ const val ADDITIONAL_URL_MOVIE_DETAIL = "movie/{id}?api_key=$API_KEY&language=pt
 const val DISCOVER_URL = "discover/$ADDITIONAL_URL"
 const val SEARCH_URL = "search/$ADDITIONAL_URL"
 const val BASE_URL = "https://api.themoviedb.org/3/"
-const val IMAGE_QUALITY_MID = "w500/"
+const val IMAGE_QUALITY_MID = "w780/"
 const val IMAGE_QUALITY_HIGH = "w342/"
 const val BASE_IMAGE_URL = "https://image.tmdb.org/t/p/"
 const val NULL_IMAGE_URL_MID_QUALITY = "$BASE_IMAGE_URL${IMAGE_QUALITY_MID}null"

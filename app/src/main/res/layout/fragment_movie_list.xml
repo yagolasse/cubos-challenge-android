@@ -20,19 +20,20 @@
         android:visibility="gone" />
 
     <ImageView
-        android:id="@+id/imageViewEmpty"
+        android:id="@+id/fragmentMovieListImageViewEmpty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:background="@android:drawable/ic_dialog_alert"
+        android:background="@drawable/baseline_cloud_off_black_18dp"
         android:visibility="gone" />
 
     <TextView
-        android:id="@+id/textViewEmpty"
+        android:id="@+id/fragmentMovieListTextViewEmpty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageViewEmpty"
+        android:layout_below="@+id/fragmentMovieListImageViewEmpty"
         android:layout_centerHorizontal="true"
         android:text="@string/internet_connection_error"
         android:visibility="gone" />

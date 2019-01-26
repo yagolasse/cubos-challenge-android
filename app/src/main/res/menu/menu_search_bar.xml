@@ -7,7 +7,7 @@
     <item
         android:id="@+id/barSearch"
         android:title=""
-        android:icon="@android:drawable/ic_menu_search"
+        android:icon="@drawable/baseline_search_white_24dp"
         app:actionViewClass="android.support.v7.widget.SearchView"
         app:showAsAction="ifRoom|collapseActionView" />
 

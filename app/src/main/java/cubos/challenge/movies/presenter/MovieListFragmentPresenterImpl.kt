@@ -37,9 +37,9 @@ class MovieListFragmentPresenterImpl(
         mainView.hideProgress()
     }
 
-    override fun requestMovieById(movieId: Int) { }
+    override fun requestMovieById(movieId: Int) {}
 
-    override fun onFinished(movie: Movie) { }
+    override fun onFinished(movie: Movie) {}
 
-    override fun onDestroy() { }
+    override fun onDestroy() {}
 }

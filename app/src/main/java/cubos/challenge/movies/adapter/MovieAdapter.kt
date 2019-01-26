@@ -7,10 +7,10 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
-import cubos.challenge.movies.config.BASE_IMAGE_URL
-import cubos.challenge.movies.config.IMAGE_QUALITY_MID
 import cubos.challenge.movies.R
 import cubos.challenge.movies.async.DownloadPosterTask
+import cubos.challenge.movies.config.BASE_IMAGE_URL
+import cubos.challenge.movies.config.IMAGE_QUALITY_MID
 import cubos.challenge.movies.event.RecyclerItemClickListener
 import cubos.challenge.movies.model.Movie
 
@@ -31,7 +31,7 @@ class MovieAdapter(
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
 
         val movie = dataList[position]
-        val downloadPosterTask = DownloadPosterTask(holder.poster, holder.progressBar, movie)
+        val downloadPosterTask = DownloadPosterTask(holder.poster, holder.progressBar)
         val finalPosterURL = BASE_IMAGE_URL.plus(IMAGE_QUALITY_MID).plus(movie.posterPath)
 
         holder.title.text = movie.title

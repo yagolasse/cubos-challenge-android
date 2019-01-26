@@ -21,6 +21,23 @@
 
     </android.support.design.widget.AppBarLayout>
 
+    <ImageView
+        android:id="@+id/activityDetailImageViewEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/default_margin"
+        android:background="@drawable/baseline_cloud_off_black_18dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/activityDetailTextViewEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/internet_connection_error"
+        android:visibility="gone" />
+
     <ProgressBar
         android:id="@+id/activityDetailProgressBar"
         style="?android:attr/progressBarStyle"
@@ -29,6 +46,7 @@
         android:visibility="gone" />
 
     <ScrollView
+        android:id="@+id/activityDetailDataLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -38,14 +56,16 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/movieDetailPosterImageView"
+                android:id="@+id/activityDetailPosterImageView"
                 android:layout_width="match_parent"
                 android:layout_height="530dp"
                 android:layout_margin="@dimen/default_margin"
-                android:scaleType="centerCrop" />
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_cloud_off_black_18dp"
+                android:visibility="gone" />
 
             <ProgressBar
-                android:id="@+id/movieDetailImageProgressBar"
+                android:id="@+id/activityDetailImageProgressBar"
                 style="?android:attr/progressBarStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -61,7 +81,7 @@
                 android:text="@string/description_plain" />
 
             <TextView
-                android:id="@+id/movieDetailDescriptionTextView"
+                android:id="@+id/activityDetailDescriptionTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"

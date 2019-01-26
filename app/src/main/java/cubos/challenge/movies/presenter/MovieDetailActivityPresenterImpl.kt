@@ -20,12 +20,14 @@ class MovieDetailActivityPresenterImpl(
         mainView.hideProgress()
     }
 
-    override fun onFailure(t: Throwable) { }
+    override fun onFailure(t: Throwable) {
+        mainView.onResponseFailure(t)
+    }
 
-    override fun onDestroy() { }
+    override fun onDestroy() {}
 
-    override fun requestMovieListByName(movieName: String) { }
+    override fun requestMovieListByName(movieName: String) {}
 
-    override fun requestMovieListByGenre(genreId: Int) { }
+    override fun requestMovieListByGenre(genreId: Int) {}
 
 }
