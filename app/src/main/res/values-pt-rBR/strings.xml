@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Movies</string>
+    <string name="title_activity_main">Movies</string>
+    <string name="description_plain">Descrição</string>
+    <string name="tab_title_action">Ação</string>
+    <string name="tab_title_drama">Drama</string>
+    <string name="tab_title_fantasy">Fantasia</string>
+    <string name="tab_title_fiction">Ficção</string>
+    <string name="internet_connection_error">Por favor, verifique sua conexão com a internet.</string>
+</resources>

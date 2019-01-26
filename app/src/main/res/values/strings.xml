@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="title_activity_main">Movies</string>
+    <string name="description_plain">Description</string>
+    <string name="tab_title_action">Action</string>
+    <string name="tab_title_drama">Drama</string>
+    <string name="tab_title_fantasy">Fantasy</string>
+    <string name="tab_title_fiction">Fiction</string>
+    <string name="internet_connection_error">Please check your internet connection.</string>
+
+</resources>
