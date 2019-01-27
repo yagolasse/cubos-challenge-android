@@ -31,7 +31,7 @@ class MovieDetailActivity : AppCompatActivity(), MainView {
         val finalPosterURL = BASE_IMAGE_URL.plus(IMAGE_QUALITY_HIGH).plus(movie.posterPath)
         title = movie.title
         activityDetailDescriptionTextView.text =
-                if(movie.overview.isBlank()) movie.overview
+                if(movie.overview.isNotBlank()) movie.overview
                 else resources.getString(R.string.no_overview_provided_message)
         downloadPosterTask.execute(finalPosterURL)
         activityDetailImageViewEmpty.visibility = View.GONE
