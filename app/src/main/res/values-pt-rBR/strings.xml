@@ -9,4 +9,5 @@
     <string name="tab_title_fantasy">Fantasia</string>
     <string name="tab_title_fiction">Ficção</string>
     <string name="internet_connection_error">Por favor, verifique sua conexão com a internet.</string>
+    <string name="no_overview_provided_message">Nenhuma descrição para este filme.</string>
 </resources>

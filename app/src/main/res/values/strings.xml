@@ -7,5 +7,6 @@
     <string name="tab_title_fantasy">Fantasy</string>
     <string name="tab_title_fiction">Fiction</string>
     <string name="internet_connection_error">Please check your internet connection.</string>
+    <string name="no_overview_provided_message">No overview provided for this Movie.</string>
 
 </resources>
