@@ -16,11 +16,11 @@ import cubos.challenge.movies.model.Movie
 
 
 class MovieAdapter(
-        private val dataList: Array<Movie>,
         private val recyclerItemClickListener: RecyclerItemClickListener
 ) :
         RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
 
+    var dataList: Array<Movie> = arrayOf()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)

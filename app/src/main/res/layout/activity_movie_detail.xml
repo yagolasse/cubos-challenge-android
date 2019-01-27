@@ -61,7 +61,6 @@
                 android:layout_height="530dp"
                 android:layout_margin="@dimen/default_margin"
                 android:scaleType="centerCrop"
-                android:src="@drawable/baseline_cloud_off_black_18dp"
                 android:visibility="gone" />
 
             <ProgressBar

@@ -16,9 +16,9 @@ interface GetMovieDataService {
     fun getMovieById(@Path("id") movieId: Int): Call<Movie>
 
     @GET(DISCOVER_URL)
-    fun getMoviesByGenre(@Query("with_genres") genreId: Int): Call<MovieList>
+    fun getMoviesByGenre(@Query("page") page: Int, @Query("with_genres") genreId: Int): Call<MovieList>
 
     @GET(SEARCH_URL)
-    fun getMoviesByTitle(@Query("query") movieTitle: String): Call<MovieList>
+    fun getMoviesByTitle(@Query("page") page: Int, @Query("query") movieTitle: String): Call<MovieList>
 
 }

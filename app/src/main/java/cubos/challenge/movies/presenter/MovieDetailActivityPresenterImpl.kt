@@ -26,8 +26,8 @@ class MovieDetailActivityPresenterImpl(
 
     override fun onDestroy() {}
 
-    override fun requestMovieListByName(movieName: String) {}
+    override fun requestMovieListByGenre(page: Int, genreId: Int) { }
 
-    override fun requestMovieListByGenre(genreId: Int) {}
+    override fun requestMovieListByName(page: Int, movieName: String) { }
 
 }

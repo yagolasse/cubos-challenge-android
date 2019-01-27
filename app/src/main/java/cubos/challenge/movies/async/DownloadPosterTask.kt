@@ -39,6 +39,10 @@ class DownloadPosterTask(
         }
     }
 
+    override fun onCancelled(result: Bitmap?) {
+
+    }
+
     override fun onPostExecute(result: Bitmap?) {
         poster.setImageBitmap(result)
         poster.visibility = View.VISIBLE

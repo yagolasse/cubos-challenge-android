@@ -7,9 +7,9 @@ interface Presenter {
 
     fun onDestroy()
 
-    fun requestMovieListByName(movieName: String = "")
+    fun requestMovieListByName(page: Int = 1, movieName: String = "")
 
-    fun requestMovieListByGenre(genreId: Int = 0)
+    fun requestMovieListByGenre(page: Int = 1, genreId: Int = 0)
 
     fun requestMovieById(movieId: Int)
 
@@ -39,5 +39,5 @@ interface GetMovieInteractor {
 
     fun getMovieById(movieId: Int, onFinishedListener: GetMovieInteractor.OnFinishedListener)
 
-    fun getMovieArray(genreId: Int = 0, movieName: String = "", onFinishedListener: OnFinishedListener)
+    fun getMovieArray(page: Int, genreId: Int = 0, movieName: String = "", onFinishedListener: OnFinishedListener)
 }

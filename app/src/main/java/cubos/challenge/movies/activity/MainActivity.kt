@@ -76,6 +76,7 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener, MenuIt
         mainTabLayout.visibility = View.VISIBLE
         mainPagerView.visibility = View.VISIBLE
         clearSearch()
+        filteredListFragment!!.onDestroy()
         return true
     }
 
@@ -97,7 +98,8 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener, MenuIt
 
     private fun movieSearchByName(query: String?) {
         if (query!!.isNotBlank()) {
-            filteredListFragment!!.presenter.requestMovieListByName(query)
+            filteredListFragment!!.presenter.requestMovieListByName(movieName = query)
+            filteredListFragment!!.lastQuery = query
             mainPagerView.visibility = View.GONE
         }
     }

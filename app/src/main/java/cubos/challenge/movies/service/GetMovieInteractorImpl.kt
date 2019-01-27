@@ -27,12 +27,12 @@ class GetMovieInteractorImpl : GetMovieInteractor {
         })
     }
 
-    override fun getMovieArray(genreId: Int, movieName: String, onFinishedListener: GetMovieInteractor.OnFinishedListener) {
+    override fun getMovieArray(page: Int, genreId: Int, movieName: String, onFinishedListener: GetMovieInteractor.OnFinishedListener) {
 
         val service = RetrofitInstance.instance.create(GetMovieDataService::class.java)
         val call =
-                if (genreId != 0) service.getMoviesByGenre(genreId)
-                else service.getMoviesByTitle(movieName)
+                if (genreId != 0) service.getMoviesByGenre(page, genreId)
+                else service.getMoviesByTitle(page, movieName)
 
         call.enqueue(object : Callback<MovieList> {
             override fun onResponse(call: Call<MovieList>, response: Response<MovieList>) {

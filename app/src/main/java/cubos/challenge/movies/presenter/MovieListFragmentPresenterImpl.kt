@@ -9,14 +9,14 @@ class MovieListFragmentPresenterImpl(
 ) :
         Presenter, GetMovieInteractor.OnFinishedListener {
 
-    override fun requestMovieListByName(movieName: String) {
+    override fun requestMovieListByName(page: Int, movieName: String) {
         mainView.showProgress()
-        getMovieInteractor.getMovieArray(movieName = movieName, onFinishedListener = this)
+        getMovieInteractor.getMovieArray(page = page, movieName = movieName, onFinishedListener = this)
     }
 
-    override fun requestMovieListByGenre(genreId: Int) {
+    override fun requestMovieListByGenre(page: Int, genreId: Int) {
         mainView.showProgress()
-        getMovieInteractor.getMovieArray(genreId = genreId, onFinishedListener = this)
+        getMovieInteractor.getMovieArray(page = page, genreId = genreId, onFinishedListener = this)
     }
 
     override fun onFinished(movieList: Array<Movie>) {
